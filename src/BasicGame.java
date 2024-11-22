@@ -37,12 +37,12 @@ public class BasicGame implements GameLoop {
         if (ball.x>SaxionApp.getWidth()) {
             ball.x = SaxionApp.getWidth();
             ball.speedX = -ball.speedX;
-            SaxionApp.playSound("BasicGame/resources/impact.ogg");
+            SaxionApp.playSound("resources/impact.wav");
         }
         if (ball.x<0) {
             ball.x = 0;
             ball.speedX = -ball.speedX;
-            SaxionApp.playSound("BasicGame/resources/impact.ogg");
+            SaxionApp.playSound("resources/impact.wav");
         }
         if (ball.y>SaxionApp.getHeight()) {
             ball.y = 0;
